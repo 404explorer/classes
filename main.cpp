@@ -2,8 +2,10 @@
 // In Visual Studio Source folder keeps implementation files
 //and Headers folder keeps declaration files
 #include<iostream>
+#include"triangle.h"
 using namespace std;
 typedef string st;
+
 
 
 class Rectangle{
@@ -31,6 +33,14 @@ int main(){
     cout<<Rect_1.get_width()<<endl;
     cout<<Rect_1.get_height()<<endl;
     cout<<Rect_1.get_area()<<endl;
+
+    cout<<"trianlge timme!!^^^\n";
+    double tside;
+    cout<< "Enter side> ";cin>>tside;
+    Triangle triki;
+    triki.set_side(tside);
+    cout<<"Triangle data> \n";
+    cout<<"perimeter> "<<triki.get_perimeter()<<" area> "<< triki.get_area()<< endl;
     return 0;
 }
 

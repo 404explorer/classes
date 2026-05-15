@@ -17,6 +17,13 @@ class Rectangle{
 
 int main(){
 
+    Rectangle Rect_1;
+    Rect_1.set_height(33.33);
+    Rect_1.set_width(22.22);
+    cout<<"------\n";
+    cout<<Rect_1.get_width()<<endl;
+    cout<<Rect_1.get_height()<<endl;
+    cout<<Rect_1.get_area()<<endl;
     return 0;
 }
 

@@ -3,9 +3,12 @@ using namespace std;
 typedef string st;
 
 class Rectangle{
+
+    //declaration of private methods
     private:
         double height;
         double width;
+    //declarationn of public methods
     public:
         void set_height(double);//mutaters
         void set_width(double);
@@ -36,12 +39,16 @@ void Rectangle::set_height(double h){
     height=h;
 }
 
+//const keyword prevents get_width to update any private part variables
 double Rectangle::get_height() const{
+    
     return height;
 }
 double Rectangle::get_width() const{
     return width;
 }
 double Rectangle::get_area() const{
+    //better to return values on-a-fly cause it prevents from storing "stale"(not 
+    //updated data)
     return width*height;
 }

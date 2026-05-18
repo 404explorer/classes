@@ -18,9 +18,9 @@ class Rectangle{
     public:
         void set_height(double);//mutaters
         void set_width(double);
-        double get_width() const;//accessors
-        double get_height() const;
-        double get_area() const;
+        double get_width();//accessors
+        double get_height();
+        double get_area();
 
 };
 
@@ -36,7 +36,8 @@ int main(){
 
     cout<<"trianlge timme!!^^^\n";
     double tside;
-    cout<< "Enter side> ";cin>>tside;
+    cout<< "Enter side> \n";
+    cin>>tside;
     Triangle triki;
     triki.set_side(tside);
     cout<<"Triangle data> \n";
@@ -54,14 +55,14 @@ void Rectangle::set_height(double h){
 }
 
 //const keyword prevents get_width to update any private part variables
-double Rectangle::get_height() const{
+double Rectangle::get_height(){
     
     return height;
 }
-double Rectangle::get_width() const{
+double Rectangle::get_width(){
     return width;
 }
-double Rectangle::get_area() const{
+double Rectangle::get_area(){
     //better to return values on-a-fly cause it prevents from storing "stale"(not 
     //updated data)
     return width*height;

@@ -6,8 +6,10 @@ int menue(){
     
     while(true)
     {
-        cout<<"Chose the firuge u want to generate.>\n";
-        cout<<"Rectangle - 1\n";cout<<"Ring - 2\n";cout<<"Trienagle-3\n";
+        cout<<"####################### MAIN MENUE ###########################\n";
+        cout<<"# Chose the firuge u want to generate                        #\n";
+        cout<<"# Rectangle[1] Ring[2] Trienagle[3] Activity data[4] Quit[0] #\n";
+        cout<<"##############################################################\n";
         cin>>choise;
         if(choise==1 || choise==2 || choise==3 )
         {

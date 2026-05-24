@@ -9,9 +9,6 @@ class Rectangle{
     public:
         Rectangle();//default constructor
         Rectangle(int,int);//constructor
-        void set_height(double);//mutaters
-        void set_width(double);
-        double get_width();//accessors
-        double get_height();
-        double get_area();
-}
+        double get_perimeter();//getter
+        double get_area();//getter
+};

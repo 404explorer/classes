@@ -1,8 +1,6 @@
 #include"ring.h"
-#pragma once
-
 using namespace std;
-
+Ring::Ring(){};
 Ring::Ring(double inr, double outr){
     outer_radius=outr;
     inner_radius=inr;
@@ -15,7 +13,7 @@ void Ring::set_ring(double in, double out){
 }
 double Ring::get_area()//area getter
 {
-    return 2*pi*pow(outer_radius,2)-2*pi*(inner_radius,2);
+    return 2*pi*outer_radius*outer_radius-2*pi*inner_radius*inner_radius;
 }
 double Ring::get_perimeter()//perimeter getter
 {

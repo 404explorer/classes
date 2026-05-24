@@ -2,6 +2,11 @@
 #include<cmath>
 #include"triangle.h"
 
+Triangle::Triangle(){};
+Triangle::Triangle(double s){
+    side=s;
+}
+
 void Triangle::set_side(double s){
     side=s;}
 

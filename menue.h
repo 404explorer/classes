@@ -6,7 +6,7 @@ class Menue{
     public:
         Menue();
         void show_menue();
-        void menue_choice();
+        void menue_chk_process(int);
     private:
         int choice;
 

@@ -1,6 +1,6 @@
 
-// In Visual Studio Source folder keeps implementation files
-//and Headers folder keeps declaration files
+
+#include <vector>
 #include<iostream>
 #include"triangle.h"
 #include"ring.h"
@@ -10,10 +10,9 @@ using namespace std;
 typedef string st;
 
 int main(){ 
-
-
-
-cout<<"program terminated...";
+Menue One;
+One.show_menue();
+//std::vector<std::any> shapes_list;
     return 0;
 }
 

@@ -32,7 +32,10 @@ void Menue::menue_chk_process(int c){
     {
           cout<<"Creating ring>\n";
           double inner, outer;
-        cout<<"enter >\n";
+        cout<<"enter inner and outer radiuses>\n";
+        Ring Rn(inner, outer);
+        Rn.get_area();
+        Rn.get_perimeter();
     }
 
 }

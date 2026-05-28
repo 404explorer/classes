@@ -39,7 +39,7 @@ void create_ring()
 {
     double out,inn;
     std::cout<<"[Creating ring]\n";
-    std::cout<<"[outer diameter]> ";cin>>out;std::cout<<endl;
+    std::cout<<"[outer diameter]> ";cin>>out;
     std::cout<<"[inner diameter]> ";cin>>inn;
     ring_list.push_back(Ring(out,inn));
 
@@ -47,6 +47,7 @@ void create_ring()
 
 //main function 
 int main(){
+    system("cls");
     bool run=true;
     Menue One;
     while(run)
@@ -78,7 +79,7 @@ int main(){
             else{
                     std::cout<<"try again\n";
                 }
-                system("cls");
+     system("cls");           
     }
         
     

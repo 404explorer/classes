@@ -1,12 +1,17 @@
 #pragma once
 #include<iostream>
+#include<vector>
 using namespace std;
 
 class Menue{
+
     public:
         Menue();
-        void show_menue();
-        void menue_chk_process(int);
+        void main_menue();
+        void showdata_menue();
+        void rectdata_menue();
+        void tridata_menue();
+        void ringdata_menue();
     private:
         int choice;
 

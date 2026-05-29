@@ -15,6 +15,57 @@ vector<Triangle> tri_list;
 vector<Ring> ring_list;
 //all functions of pushing object to "database"
 //are here
+void create_rect();
+void create_tri();
+void create_ring();
+void show_data_menue(bool);
+
+//main function 
+int main(){
+    system("cls");
+    bool run=true;
+    bool figure_menue_chk=true;
+    Menue One;
+    while(run)
+        {
+            One.main_menue(rect_list.size(),ring_list.size(),tri_list.size());
+            show_data_menue(figure_menue_chk);
+            std::cout<<"> ";
+            int chk;
+            cin>>chk;
+            if(chk==1)
+                {
+                    create_rect();
+                }
+            else if(chk==2)
+                {
+                    create_ring();
+                }
+            else if(chk==3)
+                {
+                    create_tri();
+                }
+            else if(chk==4)
+                {
+                    std::cout<<"dta\n";
+                }
+            else if (chk==0)
+                {
+                    run=false;
+                }
+            else if(chk==4){
+                figure_menue_chk=false;
+            }
+            else{
+                    std::cout<<"try again\n";
+                }
+     system("cls");           
+    }
+        
+    
+    std::cout<<"program terminated\n";
+    return 0;
+}
 
 void create_rect()
 {   
@@ -45,44 +96,7 @@ void create_ring()
 
 }
 
-//main function 
-int main(){
-    system("cls");
-    bool run=true;
-    Menue One;
-    while(run)
-        {
-            One.main_menue();
-            std::cout<<"> ";
-            int chk;
-            cin>>chk;
-            if(chk==1)
-                {
-                    create_rect();
-                }
-            else if(chk==2)
-                {
-                    create_ring();
-                }
-            else if(chk==3)
-                {
-                    create_tri();
-                }
-            else if(chk==4)
-                {
-                    std::cout<<"dta\n";
-                }
-            else if (chk==0)
-                {
-                    run=false;
-                }
-            else{
-                    std::cout<<"try again\n";
-                }
-     system("cls");           
-    }
-        
-    
-    std::cout<<"program terminated\n";
-    return 0;
+void show_data_menue(bool fi){
+    if(fi=false){
+    cout<<"#data#\n";}
 }

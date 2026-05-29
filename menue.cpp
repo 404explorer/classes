@@ -1,19 +1,26 @@
 #include"menue.h"
-#include"rectangle.h"
-#include"triangle.h"
-#include"ring.h"
+#include<string>
+
+typedef string st;
 
 Menue::Menue()
 {
        
 }
-void Menue::main_menue()
+void Menue::main_menue(int re,int ri,int tri)
 {
-cout<<"####################### MAIN MENUE ###########################\n";
-cout<<"# Chose the firuge u want to generate                        #\n";
-cout<<"# Rectangle[1] Ring[2] Trienagle[3] Activity data[4] Quit[0] #\n";
-cout<<"##############################################################\n";             
+st rec=to_string(re);
+st ring=to_string(ri);
+st tria=to_string(tri);
+int total=re+ri+tri;
+
+cout<<"MAIN MENUE ####################################################\n";
+cout<<"Figure selection[number in square brakets]\n";
+cout<<"Rectangle[1]"<<rec<<" Ring[2]"<<ring<<" Trienagle[3]"<<tria<<" Figures data[4] Quit[0] \n";
+cout<<"Total number of figures: "<<total<<endl; 
+cout<<"###############################################################\n";             
 }
+
 
 void Menue::showdata_menue()
 
